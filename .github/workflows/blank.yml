@@ -32,6 +32,6 @@ jobs:
    steps:
       # Run ZAP Scan
       - name: ZAP Pen
-        uses: zaproxy/action-api-scan@v0.0.9
+        uses: zaproxy/action-api-scan@v0.9.0
         with:
           target: 'https://www.medium.com/'
