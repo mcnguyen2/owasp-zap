@@ -27,3 +27,11 @@ jobs:
         uses: zaproxy/action-baseline@v0.14.0
         with:
           target: 'https://www.medium.com/'
+  zap_scan_pen:
+   runs-on: ubuntu-latest
+   steps:
+      # Run ZAP Scan
+      - name: ZAP Pen
+        uses: zaproxy/action-api-scan@v0.0.9
+        with:
+          target: 'https://www.medium.com/'
